@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Grupo de Pessoas</title>
+</head>
+<body>
+  <header>
+    <h1>Conheça o Grupo</h1>
+  </header>
+  <main>
+    <div class="profiles">
+      <div class="profile" onclick="showProfile('matheus')">
+        <img src="assets/matheus.jpg" alt="Matheus">
+        <h2>Matheus Vinicius</h2>
+        <p>Desenvolvedor web full-stack
+            apaixonado por tecnologia, capaz de criar
+            aplicações completas do zero.</p>
+      </div>
+      <div class="profile" onclick="showProfile('arquires')">
+        <img src="assets/arquires.jpg" alt="Arquires">
+        <h2>Arquires</h2>
+        <p></p>
+      </div>
+      <div class="profile" onclick="showProfile('eric')">
+        <img src="assets/eric.jpg" alt="Eric">
+        <h2>Eric</h2>
+        <p></p>
+      </div>
+      <div class="profile" onclick="showProfile('liliane')">
+        <img src="assets/liliane.jpg" alt="Liliane">
+        <h2>Liliane</h2>
+        <p></p>
+      </div>
+      <div class="profile" onclick="showProfile('thayna')">
+        <img src="assets/thayna.jpg" alt="Thayná">
+        <h2>Thayná</h2>
+        <p></p>
+      </div>
+    </div>
+  </main>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-name"></h2>
+      <img id="modal-image" src="" alt="">
+      <p id="modal-bio"></p>
+      <a id="modal-cv" href="" download>Download Currículo</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
