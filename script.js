@@ -2,13 +2,13 @@ function showProfile(profileName) {
   const profiles = {
     matheus: {
       name: "Matheus Vinicius",
-      bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      bio: "Busco uma oportunidade de atuação com Cloud para firmar e expandir os meus conhecimentos no mercado de Tecnologia",
       cvPath: "assets/matheus_cv.pdf",
       imagePath: "assets/ft_matheus.png",
     },
     arquires: {
       name: "Arquires Stoco",
-      bio: "Lore ipsum sobre Arquires...",
+      bio: "",
       cvPath: "assets/arquires_cv.pdf",
       imagePath: "./assets/ft_arquires.jpg",
     },
@@ -26,7 +26,7 @@ function showProfile(profileName) {
     },
     thayna: {
       name: "Thayná Vianna",
-      bio: "Lore ipsum sobre Thayná...",
+      bio: "",
       cvPath: "assets/cv_thayna.pdf",
       imagePath: "./assets/ft_thayna.jpg",
     },

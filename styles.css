@@ -49,12 +49,13 @@ main {
 .profile p {
   text-align: justify;
   font-size: 14px;
-  max-width: 250px; /* Adicionei a largura máxima da minibio */
+  max-width: 250px; 
 }
 
 .profile img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
   border-radius: 50%;
   margin-bottom: 10px;
 }
