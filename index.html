@@ -1,57 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Grupo de Pessoas</title>
+  <title>AWS - Grupo 6</title>
 </head>
 <body>
   <header>
-    <h1>Conheça o Grupo</h1>
+    <h1>AWS Cloud Practitioner - Grupo 6</h1>
   </header>
   <main>
     <div class="profiles">
-      <div class="profile" onclick="showProfile('matheus')">
-        <img src="assets/matheus.jpg" alt="Matheus">
-        <h2>Matheus Vinicius</h2>
-        <p>Desenvolvedor web full-stack
-            apaixonado por tecnologia, capaz de criar
-            aplicações completas do zero.</p>
-      </div>
       <div class="profile" onclick="showProfile('arquires')">
-        <img src="assets/arquires.jpg" alt="Arquires">
-        <h2>Arquires</h2>
-        <p></p>
+        <img src="assets/ft_arquires.jpg" alt="Arquires">
+        <h2>Arquires Stoco</h2>
+        <p>22 anos \ São Caetano do Sul/SP.
+          Experiência em: C| java| MySQL.
+          Busco uma vaga de trabalho na  área de suporte em AWS</p>
       </div>
       <div class="profile" onclick="showProfile('eric')">
-        <img src="assets/eric.jpg" alt="Eric">
-        <h2>Eric</h2>
-        <p></p>
+        <img src="assets/ft_eric.jpg" alt="Eric">
+        <h2>Éric Oliveira</h2>
+        <p>21 anos, Brasília/DF, Estudante de Desenvolvimento Web.<br/>
+          Tenho como hobbies:ler, correr e jogar.
+          </p>
       </div>
       <div class="profile" onclick="showProfile('liliane')">
-        <img src="assets/liliane.jpg" alt="Liliane">
-        <h2>Liliane</h2>
-        <p></p>
+        <img src="assets/ft_liliane.jpg" alt="Liliane">
+        <h2>Liliane Gama</h2>
+        <p>30 anos, Manaus/Am. Gestor de Produção industrial | Especialista em engenharia de produção | MBA em Gestão de processo </p>
+      </div>
+      <div class="profile" onclick="showProfile('matheus')">
+        <img src="assets/ft_matheus.png" alt="Matheus">
+        <h2>Matheus Vinicius</h2>
+        <p>Desenvolvedor web full-stack apaixonado por tecnologia, capaz de criar aplicações completas do zero.</p>
       </div>
       <div class="profile" onclick="showProfile('thayna')">
-        <img src="assets/thayna.jpg" alt="Thayná">
-        <h2>Thayná</h2>
-        <p></p>
+        <img src="assets/ft_thayna.jpg" alt="Thayná">
+        <h2>Thayná Vianna</h2>
+        <p>27 anos. Rio de Janeiro/RJ.
+          Estudante, Analista de Suporte.
+          Em busca de uma oportunidade em Cloud.</p>
       </div>
     </div>
   </main>
-  <div id="modal" class="modal">
+  <div id="profile-modal" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
+      <span class="close" onclick="closeProfileModal()">&times;</span>
       <h2 id="modal-name"></h2>
       <img id="modal-image" src="" alt="">
       <p id="modal-bio"></p>
-      <a id="modal-cv" href="" download>Download Currículo</a>
+      <div class="modal-buttons">
+        <a id="modal-view-cv" href="#">Visualizar Currículo</a>
+        <a id="modal-download-cv" href="#" download>Download Currículo</a>
+      </div>
+    </div>
+  </div>
+  
+  <div id="cv-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCvModal()">&times;</span>
+      <iframe id="modal-cv-frame" src="" frameborder="0"></iframe>
     </div>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
